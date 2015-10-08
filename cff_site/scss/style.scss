@@ -1,0 +1,249 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+  @import "compass";
+
+.clearfix {
+    zoom: 1;
+
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    
+    &:after {
+        clear: both;
+    }
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+ul{
+	list-style:none
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
+img{
+	max-width:100%;
+	display:block;
+	margin:0 auto;
+}
+/****** begin mobile sizes  generic ******/
+
+
+header{
+	.logo{
+		display:block;
+		width:50%;
+		margin:15px auto;
+		
+	}
+	.header_search{
+		display:block;
+		
+		line-height:1.2em;
+		float:left;
+		width:20%;
+		margin-left:10%;
+		margin-right:10%;
+		
+		
+	}
+
+	#search{
+		-webkit-appearance:none;
+		background:white url(../img/search.svg);
+		background-repeat: no-repeat;
+  		background-position: right center;
+  		background-size:34px 21px;
+  		padding:11px 34px 11px 11px;
+  		height:12px;
+  		border-radius:3px;
+  		border: 1px solid #999;
+	}
+	.add{
+	
+		display:inline-block;
+		width:25%;
+		margin-right:10%;
+		border-radius: 3px;
+		border:none;
+		color:white;
+		float:right;
+		
+		vertical-align:bottom;
+		// Needs latest Compass, add '@import "compass"' to your scss
+		// Permalink - use to edit and share this gradient:
+		// http://colorzilla.com/gradient-editor/#bfd255+0,8eb92a+50,72aa00+51,9ecb2d+100;Green+Gloss
+		background-color: rgb(191,210,85); // Old browsers
+		@include filter-gradient(#bfd255, #9ecb2d, vertical); // IE6-9
+		@include background-image(linear-gradient(top,  rgba(191,210,85,1) 0%,rgba(142,185,42,1) 50%,rgba(114,170,0,1) 51%,rgba(158,203,45,1) 100%));
+		padding:10px;	
+	}
+
+}
+.wrapper{
+	width:94%;
+	margin:0 auto;
+}
+.navigation{
+	// Needs latest Compass, add '@import "compass"' to your scss
+	// Permalink - use to edit and share this gradient:
+	// http://colorzilla.com/gradient-editor/#6063b2+0,2b88d9+24,2b88d9+24,163a8e+67,260f5e+100
+	background-color: rgb(96,99,178); // Old browsers
+	@include filter-gradient(#6063b2, #260f5e, vertical); // IE6-9
+	@include background-image(linear-gradient(top,  rgba(96,99,178,1) 0%,rgba(43,136,217,1) 24%,rgba(43,136,217,1) 24%,rgba(22,58,142,1) 67%,rgba(38,15,94,1) 100%));
+	margin-top:20px;
+	text-align:center;
+	padding:10px;
+	border-radius:3px;
+		ul{
+			padding-left:0;
+		}
+		li{
+			background:#2c2b4d;
+			border-bottom:1px solid white;
+			padding:10px;
+		}
+}
+
+.about_us{
+	color:white;
+	border-radius:3px;
+	background: #2c2b4d;
+	padding:4%;
+	margin-top:20px;
+	line-height:1.8em;
+		.about_us_image{
+			margin-bottom:20px;
+		}
+}
+
+
+.pullout_quotation{
+	margin-top:20px;
+	margin-bottom:20px;
+	color:white;
+	padding: 8%;
+    background: #acadaf url(../img/open_quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 29px;
+    background-size: 54px 46px;
+    border-radius:3px;
+
+}
+.important_links{
+	background:#2c2b4d;
+	padding:5%;
+	margin-bottom:20px;
+	border-radius:3px;
+
+		a{
+			display:block;
+			text-align:center;
+			padding:20px;
+			// Needs latest Compass, add '@import "compass"' to your scss
+			// Permalink - use to edit and share this gradient:
+			// http://colorzilla.com/gradient-editor/#b4ddb4+0,83c783+17,52b152+33,008a00+67,005700+83,002400+100;Green+3D+%231
+			background-color: #b4ddb4; // Old browsers
+			@include filter-gradient(#b4ddb4, #002400, vertical); // IE6-9
+			@include background-image(linear-gradient(top,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%));
+		}
+			a:first-child{
+				margin-bottom:15px;
+			}
+
+}
+
+.secondary_links{
+	ul{
+		padding-left:0;
+		margin-top:0;
+	}
+	li{
+		background-color: rgb(96,99,178); // Old browsers
+		@include filter-gradient(#6063b2, #260f5e, vertical); // IE6-9
+		@include background-image(linear-gradient(top,  rgba(96,99,178,1) 0%,rgba(43,136,217,1) 24%,rgba(43,136,217,1) 24%,rgba(22,58,142,1) 67%,rgba(38,15,94,1) 100%));
+		margin-top:20px;
+		text-align:center;
+		padding:10px;
+		border-radius:3px;
+	}
+	li:first-child{
+		margin-top:10px;
+
+	}
+}
+
+.second_nav_image{
+	display:none;
+}
+
+.stay_informed{
+	background-color: #2c2b4d;
+	color:white;
+	padding: 2% 4% 8% 4%;
+	border-radius:3px;
+		input{
+			color:black;
+			margin:0 auto;
+			width:80%;
+
+		}
+}
+.resources{
+	background: #acadaf;
+	padding:4%;
+	margin-top:20px;
+	border-radius:3px;
+		ul{
+			padding-left:0;
+		}
+		li{
+			background-color: #b4ddb4; // Old browsers
+			@include filter-gradient(#b4ddb4, #002400, vertical); // IE6-9
+			@include background-image(linear-gradient(top,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%));
+			text-align:center;
+			margin-top:15px;
+			padding:10px;
+			border-radius:3px;
+		}
+		a{
+			padding:10px;
+		}
+}
+.headlines{
+	h3{
+		border-bottom:2px solid black;
+	}
+	a{
+		color: #00aeef;
+	}
+}
+
+/****** begin index.html ******/
+
+
+
+footer{
+	background-color: #2c2b4d;
+	padding:6%;
+	color:white;
+	line-height:1.8em;
+		ul{
+			padding-left:0;
+		}
+		.social_media li{
+			float:left;
+			width:18%;
+			margin-right:7%;
+		}
+		.right{
+			font-weight:bolder;
+			font-size:2em;
+			line-height:2em;
+		}
+}
