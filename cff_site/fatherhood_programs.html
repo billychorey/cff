@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
+        <header class="clearfix">
             <div class="logo">
                 <img src="img/logo.png">
             </div>
@@ -25,92 +25,120 @@
                 <input class="add" type="submit" value="DONATE"/>
             </div>
         </header>
-        <div class="wrapper">
-            <div class="navigation_large">
+        <div class="wrapper clearfix">
+            
+            <div class="navigation">
+                <a class="mobile_nav_button" href="#">Navigation</a>
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.html">About</a></li>
                     <li><a href="#">Impact</a></li>
                     <li><a href="#">Programs</a></li>
                     <li><a href="#">Ways to Give</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="fatherhood_programs">
+
+
+
+            <div class="fatherhood_programs clearfix first_paragraph">
                 <div class="programs_text">
                     <h2>FATHERHOOD PROGRAMS</h2>
+                    <div>
+                        <img src="img/program_feature_baby.jpg">  
+                    </div>
                     <p>Work from the inside out. In a local fatherhood program men experience a comprehensive approach designed to increase their skills, overcome obstacles and become engaged, responsible fathers.  First and foremost, a program creates an environment of trust and respect where fathers can express frustrations and fears and find resources and motivation to persevere and resolve their complex challenges</p>
+                  
                     <p>During the six month program fathers p articipate in weekly peer support meetings where they learn and share together while building a new support network of men who want to do better and be better.</p>
                 </div>
-                <div>
-                    <img src="img/program_feature_baby.jpg">  
+                
+            </div>
+            <div class="topics_and_map clearfix">
+                <div class="topics clearfix">
+                    <h3>Topics Include:</h3>
+                    <ul>
+                        <li>Responsible Fatherhood</li>
+                        <li>Spiritual Development</li>
+                        <li>Effective Communication</li>
+                    </ul>
+                    <ul>
+                        <li>Employment</li>
+                        <li>The Legal System</li>
+                        <li>Financial Management</li>
+                    </ul>
+                    <ul>
+                        <li>Parenting</li>
+                        <li>Relationships</li>
+                        <li>Health and Education</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="topics">
-                <ul>
-                    <li>Responsible Fatherhood</li>
-                    <li>Spiritual Development</li>
-                    <li>Effective Communication</li>
-                </ul>
-                <ul>
-                    <li>Employment</li>
-                    <li>The Legal System</li>
-                    <li>Financial Management</li>
-                </ul>
-                <ul>
-                    <li>Parenting</li>
-                    <li>Relationships</li>
-                    <li>Health and Education</li>
-                </ul>
-            </div>
-            <div class="network_map">
                 <div class="map_image">
-                    <img src="img/SCCFF_map(1).png">                    
+                    <img src="img/map.png">                    
                 </div>
+            </div>    
+            <div class="network clearfix">
+              
                 <h3>Fatherhood Programs in South Carolina.</h3>
                 <p>A network of six fatherhood programs in eleven communities crisscross the state.</p>
                 <p>Regardless of where a father lives, a fatherhood program is within 50 miles of him. Fathers from outside the county are welcome to participate. </p>
             </div> 
-            <div class= "success_stories">
-                <div class="trophy">
-                    <img src="img/trophy.svg">
-                </div>
-                <div class="success_content">
-                <h2>SUCCESS STORIES</h2>
-                    <div class="successful_fathers">
-                        <ul>
-                            <li><h3><a href="#">Michael</a></h3><p>A 46 year old father of two girls</p></li>
-                            <li><h3><a href="#">Nathan</a></h3><p>A 41 year old divorced father of two teenage children</p></li>
-                            <li><h3><a href="#">MSidney</a></h3><p>A father of four children.</p></li>
-                            <li><h3><a href="#">Henry</a></h3><p>Came to the program discouraged, unemployed, and separated from his children.</p></li>
-                        </ul>
+            <div class="stories_and_resources clearfix">   
+                <div class= "success_stories">
+                    <div class="trophy">
+                        <img src="img/trophy.svg">
+                    </div>
+                    <div class="success_content">
+                    <h2>Success Stories</h2>
+                        <div class="successful_fathers">
+                            <ul>
+                                <li><h3><a href="#">Michael</a></h3><p>A 46 year old father of two girls</p></li>
+                                <li><h3><a href="#">Nathan</a></h3><p>A 41 year old divorced father of two teenage children</p></li>
+                                <li><h3><a href="#">Sidney</a></h3><p>A father of four children.</p></li>
+                                <li><h3><a href="#">Henry</a></h3><p>Came to the program discouraged, unemployed, and separated from his children.</p></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="fatherhood_programs_resources">  
-                <h2>RESOURCES</h2>
-                <ul>
-                    <li><a href="#"><img src="img/welcome_packet.svg"></a></li>
-                    <li><a href="#"><img src="img/special_needs.svg"></a></li>
-                </ul>
-            </div>
-            <div class="find_a_program">
-                <h2>GET STARTED TODAY!</h2>
-                <div class="search_box">
-                    <h3>FIND A PROGRAM NEAR YOU</h3>
-                    <div class="find">
-                        <input type="text" search="find" id="find" value="" />
-                     </div>
+                <div class="fatherhood_programs_resources">  
+                    
+                    <div class="resource_links">
+                        <h2>Resources</h2>
+                        <div class="welcome_packet">
+                            <h3><a href="#">Welcome Packet</a></h3>
+                            <p>The Fathers Welcome Packet PDF is a game plan for fathers produced by Family Connection.</p>
+                        </div>
+                        <div class="special_needs">
+                            <h3><a href="#">Youth with Special Health Care Needs</a></h3>
+                            <p>Information from Family Connection of SC, in collaboration with The SCCFF.</p> 
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
-            <div class="frequently_used_links">
-                <ul>
-                    <li><a href="#">Donate </a></li>
-                    <li><a href="#">Pro Se Modification</a></li>
-                    <li><a href="#">Expungement Guide</a></li>
-                </ul>
+            <div class="find_a_program">
+                <!--<h2>GET STARTED TODAY!</h2>-->
+                <div class="search_box">
+                    <h3>FIND A PROGRAM NEAR YOU</h3>
+                    <select>
+                      <option value="horry"><h5>A Father's Place: </h5><p>Horry, Georgetown</p></option>
+                      <option value="charleston"><h5>Father to Father Project: </h5><p>Charleston</p></option>
+                      <option value="lancaster"><h5>Lancaster Fatherhood Project: </h5><p>Lancaster</p></option>
+                      <option value="marlboro"><h5>Man 2 Man: </h5><p>Marlboro</p></option>
+                      <option value="richland"><h5>Midlands Fatherhood Coalition: </h5><p>Richland, Lexington, Fairfield, Aiken</p></option>
+                      <option value="spartanburg"><h5>Upstate Fatherhood Coalition: </h5><p>Spartanburg, Greenville</p></option>
+                    </select>
+                </div>
+            </div>
+            <div class="frequently_used_links clearfix">
+                
+                <div class="links"><a href="#">Donate<br>Now</a></div>
+                <div class="links"><a href="#">Pro Se<br>Modification</a></div>
+                <div class="links"><a href="#">Expungement<br>Guide</a></div>
+                
             </div>
         </div> <!-- end wrapper -->
-    <footer>
+    <footer class="clearfix">
         <div class="left">
             <p>The South Carolina Center for Fathers and Families is a Ministry of the Sisters Charity of St. Augustine.</p>
             <p>The information on this website is for educational purposes only. It is not legal advice nor does it create an attorney/client relationship</p>
@@ -130,7 +158,7 @@
                 <li><a href="#">FAQ's</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Site Map</a></li>
-                <li><a href="#">Privace Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
             </ul>
             <div class="social_media">
                 <ul>
