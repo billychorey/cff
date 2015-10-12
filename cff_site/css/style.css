@@ -73,6 +73,7 @@ header .add {
   color: white;
   float: right;
   vertical-align: bottom;
+  text-align: center;
   background-color: #bfd255;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFBFD255', endColorstr='#FF9ECB2D');
@@ -85,13 +86,13 @@ header .add {
   padding: 10px;
 }
 
-/* line 89, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 .wrapper {
   width: 94%;
   margin: 0 auto;
 }
 
-/* line 93, ../scss/style.scss */
+/* line 94, ../scss/style.scss */
 .navigation {
   background-color: #38566b;
   *zoom: 1;
@@ -107,23 +108,18 @@ header .add {
   padding: 10px;
   border-radius: 3px;
 }
-/* line 105, ../scss/style.scss */
+/* line 106, ../scss/style.scss */
 .navigation ul {
   padding-left: 0;
 }
-/* line 108, ../scss/style.scss */
-.navigation li {
-  background: #2c2b4d;
-  border-bottom: 1px solid white;
-  padding: 10px;
-}
-/* line 113, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 .navigation a {
-  padding: 15px 25%;
-  width: 100%;
+  padding: 5%;
+  display: block;
+  margin-bottom: 5px;
 }
 
-/* line 121, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 .first_paragraph {
   color: white;
   border-radius: 3px;
@@ -132,12 +128,12 @@ header .add {
   margin-top: 20px;
   line-height: 1.8em;
 }
-/* line 128, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .first_paragraph .about_us_image {
   display: none;
 }
 
-/* line 134, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 .pullout_quotation {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -150,14 +146,14 @@ header .add {
   border-radius: 3px;
 }
 
-/* line 146, ../scss/style.scss */
+/* line 148, ../scss/style.scss */
 .important_links {
   background: #2c2b4d;
   padding: 5%;
   margin-bottom: 20px;
   border-radius: 3px;
 }
-/* line 152, ../scss/style.scss */
+/* line 154, ../scss/style.scss */
 .important_links a {
   display: block;
   text-align: center;
@@ -172,17 +168,17 @@ header .add {
   background-image: -webkit-linear-gradient(top, #8fc400 0%, #398900 100%);
   background-image: linear-gradient(to bottom, #8fc400 0%, #398900 100%);
 }
-/* line 165, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 .important_links a:first-child {
   margin-bottom: 15px;
 }
 
-/* line 172, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .secondary_links ul {
   padding-left: 0;
   margin-top: 0;
 }
-/* line 176, ../scss/style.scss */
+/* line 178, ../scss/style.scss */
 .secondary_links li {
   margin-top: 0px;
   text-align: center;
@@ -190,47 +186,47 @@ header .add {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
-/* line 184, ../scss/style.scss */
+/* line 186, ../scss/style.scss */
 .secondary_links li:first-child {
   border-radius: 3px 3px 0px 0px;
   border: 1px solid black;
 }
-/* line 190, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 .secondary_links li:last-child {
   border-radius: 0px 0px 3px 3px;
 }
-/* line 193, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 .secondary_links a {
   color: black;
   padding: 20px 50px;
   display: block;
 }
 
-/* line 201, ../scss/style.scss */
+/* line 203, ../scss/style.scss */
 .second_nav_image {
   display: none;
 }
 
-/* line 205, ../scss/style.scss */
+/* line 207, ../scss/style.scss */
 .stay_informed {
   background-color: #2c2b4d;
   color: white;
   padding: 2% 4% 8% 4%;
   border-radius: 3px;
 }
-/* line 210, ../scss/style.scss */
+/* line 212, ../scss/style.scss */
 .stay_informed input {
   color: black;
   margin: 0 auto;
   width: 80%;
 }
 
-/* line 219, ../scss/style.scss */
+/* line 221, ../scss/style.scss */
 .resources ul {
   padding-left: 0;
   margin-top: 0;
 }
-/* line 223, ../scss/style.scss */
+/* line 225, ../scss/style.scss */
 .resources li {
   margin-top: 0px;
   text-align: center;
@@ -238,76 +234,76 @@ header .add {
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
-/* line 231, ../scss/style.scss */
+/* line 233, ../scss/style.scss */
 .resources li:first-child {
   border-radius: 3px 3px 0px 0px;
   border: 1px solid black;
 }
-/* line 237, ../scss/style.scss */
+/* line 239, ../scss/style.scss */
 .resources li:last-child {
   border-radius: 0px 0px 3px 3px;
 }
-/* line 240, ../scss/style.scss */
+/* line 242, ../scss/style.scss */
 .resources a {
   color: black;
   padding: 20px 50px;
   display: block;
 }
 
-/* line 249, ../scss/style.scss */
+/* line 251, ../scss/style.scss */
 .headlines {
   margin-bottom: 40px;
 }
-/* line 251, ../scss/style.scss */
+/* line 253, ../scss/style.scss */
 .headlines ul {
   padding-left: 0;
 }
-/* line 255, ../scss/style.scss */
+/* line 257, ../scss/style.scss */
 .headlines h3 {
   border-bottom: 2px solid black;
   font-weight: bolder;
 }
-/* line 259, ../scss/style.scss */
+/* line 261, ../scss/style.scss */
 .headlines h5 {
   font-weight: bolder;
   font-size: 1em;
 }
-/* line 263, ../scss/style.scss */
+/* line 265, ../scss/style.scss */
 .headlines p {
   margin-left: 3%;
   font-weight: bolder;
 }
-/* line 268, ../scss/style.scss */
+/* line 270, ../scss/style.scss */
 .headlines a {
   color: #00aeef;
   margin-left: 3%;
   text-decoration: underline;
 }
 
-/* line 277, ../scss/style.scss */
+/* line 279, ../scss/style.scss */
 .main_content h3 {
   border-bottom: 2px solid black;
 }
-/* line 280, ../scss/style.scss */
+/* line 282, ../scss/style.scss */
 .main_content img {
   display: none;
 }
 
-/* line 284, ../scss/style.scss */
+/* line 286, ../scss/style.scss */
 .fathersandfamiliesresources {
   background-color: #e6e7e8;
   padding: 4%;
   border-radius: 3px;
 }
-/* line 288, ../scss/style.scss */
+/* line 290, ../scss/style.scss */
 .fathersandfamiliesresources h2 {
   border-bottom: 2px solid black;
 }
-/* line 291, ../scss/style.scss */
+/* line 293, ../scss/style.scss */
 .fathersandfamiliesresources ul {
   padding-left: 0;
 }
-/* line 294, ../scss/style.scss */
+/* line 296, ../scss/style.scss */
 .fathersandfamiliesresources li {
   margin: 0 auto;
   display: block;
@@ -315,8 +311,8 @@ header .add {
   text-align: center;
 }
 
-/* line 305, ../scss/style.scss */
-.fatherhood_programs img {
+/* line 306, ../scss/style.scss */
+.trophy {
   display: none;
 }
 
@@ -380,6 +376,11 @@ header .add {
 }
 
 /* line 359, ../scss/style.scss */
+.fatherhood_programs_resources img {
+  display: none;
+}
+
+/* line 365, ../scss/style.scss */
 .find_a_program {
   background-color: #e6e7e8;
   border-radius: 3px;
@@ -389,33 +390,33 @@ header .add {
   color: black;
   text-align: center;
 }
-/* line 370, ../scss/style.scss */
+/* line 374, ../scss/style.scss */
 .find_a_program .search_box {
   color: black;
 }
-/* line 375, ../scss/style.scss */
+/* line 379, ../scss/style.scss */
 .find_a_program select {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 380, ../scss/style.scss */
+/* line 384, ../scss/style.scss */
 .frequently_used_links {
   margin-bottom: 20px;
 }
 
-/* line 385, ../scss/style.scss */
+/* line 389, ../scss/style.scss */
 .links {
   float: left;
   width: 32%;
   margin: 10px auto;
   margin-right: 2%;
 }
-/* line 392, ../scss/style.scss */
+/* line 396, ../scss/style.scss */
 .links:last-child {
   margin-right: 0;
 }
-/* line 396, ../scss/style.scss */
+/* line 400, ../scss/style.scss */
 .links a {
   display: block;
   border-radius: 3px;
@@ -426,11 +427,41 @@ header .add {
   background-color: #588680;
 }
 
-/* line 410, ../scss/style.scss */
+/* line 412, ../scss/style.scss */
+.fatherhood_programs_resources img {
+  display: none;
+}
+
+/* line 418, ../scss/style.scss */
 .donation_box_choice ul {
   padding-left: 0;
 }
-/* line 413, ../scss/style.scss */
+/* line 423, ../scss/style.scss */
+.donation_box_choice li .other {
+  color: white;
+  background-color: #bfd255;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFBFD255', endColorstr='#FF9ECB2D');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2JmZDI1NSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjOGViOTJhIi8+PHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiM3MmFhMDAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5ZWNiMmQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bfd255), color-stop(50%, #8eb92a), color-stop(51%, #72aa00), color-stop(100%, #9ecb2d));
+  background-image: -moz-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+  background-image: -webkit-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+  background-image: linear-gradient(to bottom, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+  display: block;
+  text-align: center;
+  padding: 8%;
+  margin-bottom: 8px;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+/* line 437, ../scss/style.scss */
+.donation_box_choice li .other input {
+  color: black;
+  margin: 0 auto;
+  width: 75%;
+}
+/* line 453, ../scss/style.scss */
 .donation_box_choice a {
   color: white;
   background-color: #bfd255;
@@ -450,17 +481,17 @@ header .add {
   font-size: 1.2em;
 }
 
-/* line 429, ../scss/style.scss */
+/* line 469, ../scss/style.scss */
 .container {
   line-height: 2em;
 }
-/* line 431, ../scss/style.scss */
+/* line 471, ../scss/style.scss */
 .container input {
   width: 90%;
   margin: 0 auto;
 }
 
-/* line 436, ../scss/style.scss */
+/* line 476, ../scss/style.scss */
 .btn {
   background-color: #588680;
   padding: 5%;
@@ -471,7 +502,15 @@ header .add {
   -webkit-appearance: none;
 }
 
-/* line 448, ../scss/style.scss */
+/* line 485, ../scss/style.scss */
+.donate_content {
+  background: #f1f1f1;
+  padding: 4%;
+  border-radius: 3px;
+  margin: 30px auto;
+}
+
+/* line 494, ../scss/style.scss */
 footer {
   background-color: #2c2b4d;
   padding: 6%;
@@ -479,26 +518,26 @@ footer {
   color: white;
   line-height: 1.8em;
 }
-/* line 454, ../scss/style.scss */
+/* line 500, ../scss/style.scss */
 footer ul {
   padding-left: 0;
 }
-/* line 457, ../scss/style.scss */
+/* line 503, ../scss/style.scss */
 footer .left {
   font-size: .8em;
 }
-/* line 461, ../scss/style.scss */
+/* line 507, ../scss/style.scss */
 footer .address {
   font-size: 1em;
   margin-top: 40px;
 }
-/* line 465, ../scss/style.scss */
+/* line 511, ../scss/style.scss */
 footer .social_media li {
   float: left;
   width: 10%;
   margin-right: 7%;
 }
-/* line 470, ../scss/style.scss */
+/* line 516, ../scss/style.scss */
 footer .right {
   font-weight: bolder;
   font-size: 1.2em;
@@ -507,31 +546,36 @@ footer .right {
 }
 
 @media screen and (min-width: 700px) {
-  /* line 484, ../scss/style.scss */
-  .mobile_nav_button {
+  /* line 530, ../scss/style.scss */
+  header {
+    margin-bottom: 40px;
+  }
+
+  /* line 533, ../scss/style.scss */
+  .navigation .mobile_nav_button {
     display: none;
   }
 
-  /* line 487, ../scss/style.scss */
+  /* line 536, ../scss/style.scss */
   header {
     width: 90%;
     margin: 0 auto;
   }
-  /* line 491, ../scss/style.scss */
+  /* line 540, ../scss/style.scss */
   header .logo {
     float: left;
     width: 30%;
     max-height: 30px;
     padding-top: 5px;
   }
-  /* line 497, ../scss/style.scss */
+  /* line 546, ../scss/style.scss */
   header .header_search {
     width: 20%;
     margin: 0;
     padding-top: 61px;
     margin-left: 10%;
   }
-  /* line 504, ../scss/style.scss */
+  /* line 553, ../scss/style.scss */
   header .add {
     float: right;
     width: 20%;
@@ -539,11 +583,11 @@ footer .right {
     margin-right: 0;
   }
 
-  /* line 513, ../scss/style.scss */
+  /* line 562, ../scss/style.scss */
   .navigation {
     background: none;
   }
-  /* line 516, ../scss/style.scss */
+  /* line 565, ../scss/style.scss */
   .navigation li {
     background: none;
     display: inline-block;
@@ -551,50 +595,51 @@ footer .right {
     border-bottom: none;
     width: 16%;
   }
-  /* line 522, ../scss/style.scss */
+  /* line 571, ../scss/style.scss */
   .navigation li:last-child {
     border-right: none;
   }
-  /* line 527, ../scss/style.scss */
+  /* line 576, ../scss/style.scss */
   .navigation a {
     background-color: white;
     color: black;
     padding: 2%;
   }
 
-  /* line 534, ../scss/style.scss */
+  /* line 583, ../scss/style.scss */
   footer {
     display: block;
   }
-  /* line 536, ../scss/style.scss */
+  /* line 585, ../scss/style.scss */
   footer .left {
     float: left;
     width: 30%;
     margin-right: 8%;
   }
-  /* line 541, ../scss/style.scss */
+  /* line 590, ../scss/style.scss */
   footer .address {
     float: left;
     margin-top: 0;
     width: 35%;
   }
-  /* line 546, ../scss/style.scss */
+  /* line 595, ../scss/style.scss */
   footer .right {
     float: right;
     width: 20%;
     text-align: right;
   }
-  /* line 550, ../scss/style.scss */
+  /* line 599, ../scss/style.scss */
   footer .right ul {
     margin-top: 5px;
   }
-  /* line 553, ../scss/style.scss */
+  /* line 602, ../scss/style.scss */
   footer .right .social_media li {
     text-align: right;
     width: 30%;
+    float: right;
   }
 
-  /* line 564, ../scss/style.scss */
+  /* line 614, ../scss/style.scss */
   .about_us_text .about_us_image {
     display: block;
     float: right;
@@ -602,7 +647,7 @@ footer .right {
     margin-left: 3%;
   }
 
-  /* line 574, ../scss/style.scss */
+  /* line 624, ../scss/style.scss */
   .pullout_quotation {
     background: white url(../img/open_quotation.svg);
     background-repeat: no-repeat;
@@ -614,35 +659,35 @@ footer .right {
     font-weight: light;
   }
 
-  /* line 585, ../scss/style.scss */
+  /* line 635, ../scss/style.scss */
   .important_links {
     display: block;
   }
-  /* line 587, ../scss/style.scss */
+  /* line 637, ../scss/style.scss */
   .important_links a {
     display: inline-block;
     width: 43%;
     margin: 10px auto;
   }
 
-  /* line 593, ../scss/style.scss */
+  /* line 643, ../scss/style.scss */
   .secondary_links {
     background: #f1f1f1;
     padding: 4%;
     border-radius: 3px;
     margin-bottom: 20px;
   }
-  /* line 599, ../scss/style.scss */
+  /* line 649, ../scss/style.scss */
   .secondary_links .navigation_large {
     float: left;
     width: 48%;
   }
-  /* line 602, ../scss/style.scss */
+  /* line 652, ../scss/style.scss */
   .secondary_links .navigation_large li {
     margin-bottom: 8px;
     border: none;
   }
-  /* line 606, ../scss/style.scss */
+  /* line 656, ../scss/style.scss */
   .secondary_links .navigation_large a {
     background: #588680;
     padding: 7%;
@@ -650,19 +695,19 @@ footer .right {
     display: block;
     border-radius: 3px;
   }
-  /* line 616, ../scss/style.scss */
+  /* line 666, ../scss/style.scss */
   .secondary_links .second_nav_image {
     float: right;
     width: 48%;
     display: block;
   }
 
-  /* line 622, ../scss/style.scss */
+  /* line 672, ../scss/style.scss */
   .stay_informed {
     margin-bottom: 20px;
   }
 
-  /* line 625, ../scss/style.scss */
+  /* line 675, ../scss/style.scss */
   .resources_index {
     background: #f1f1f1;
     padding: 4%;
@@ -671,16 +716,16 @@ footer .right {
     width: 41%;
     margin-right: 2%;
   }
-  /* line 633, ../scss/style.scss */
+  /* line 683, ../scss/style.scss */
   .resources_index h3 {
     margin-top: 0;
   }
-  /* line 637, ../scss/style.scss */
+  /* line 687, ../scss/style.scss */
   .resources_index .resources_links li {
     border: none;
     margin-bottom: 8px;
   }
-  /* line 641, ../scss/style.scss */
+  /* line 691, ../scss/style.scss */
   .resources_index .resources_links a {
     display: block;
     background: #588680;
@@ -689,13 +734,13 @@ footer .right {
     font-weight: bolder;
   }
 
-  /* line 651, ../scss/style.scss */
+  /* line 701, ../scss/style.scss */
   .headlines {
     width: 48%;
     float: right;
   }
 
-  /* line 656, ../scss/style.scss */
+  /* line 706, ../scss/style.scss */
   .main_content {
     background: #f1f1f1;
     padding: 3%;
@@ -704,11 +749,11 @@ footer .right {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  /* line 663, ../scss/style.scss */
+  /* line 713, ../scss/style.scss */
   .main_content h3 {
     border-bottom: none;
   }
-  /* line 666, ../scss/style.scss */
+  /* line 716, ../scss/style.scss */
   .main_content img {
     display: block;
     float: right;
@@ -717,111 +762,343 @@ footer .right {
     margin-bottom: 10px;
   }
 
-  /* line 676, ../scss/style.scss */
+  /* line 725, ../scss/style.scss */
+  .fatherhood_programs_resources {
+    padding: 3%;
+    border: none;
+  }
+
+  /* line 732, ../scss/style.scss */
   .resource_links .resource_tablet {
-    float: left;
-    width: 28%;
+    padding: 4%;
     margin-right: 8%;
   }
-  /* line 680, ../scss/style.scss */
+  /* line 737, ../scss/style.scss */
   .resource_links .resource_tablet:last-child {
     margin-right: 0;
   }
 
-  /* line 688, ../scss/style.scss */
+  /* line 745, ../scss/style.scss */
+  .fatherhood_programs_resources img {
+    display: none;
+  }
+
+  /* line 749, ../scss/style.scss */
+  .frequently_used_links {
+    margin-top: 35px;
+  }
+  /* line 752, ../scss/style.scss */
+  .frequently_used_links .links {
+    display: block;
+  }
+
+  /* line 758, ../scss/style.scss */
   .fatherhood_programs img {
     display: block;
     float: right;
     margin-left: 4%;
   }
 
-  /* line 694, ../scss/style.scss */
+  /* line 764, ../scss/style.scss */
   .topics_and_map {
     margin-top: 30px;
   }
 
-  /* line 697, ../scss/style.scss */
+  /* line 767, ../scss/style.scss */
   .topics {
     float: left;
     width: 30%;
   }
-  /* line 701, ../scss/style.scss */
+  /* line 771, ../scss/style.scss */
   .topics ul {
     padding-left: 0;
   }
 
-  /* line 705, ../scss/style.scss */
+  /* line 775, ../scss/style.scss */
   .map_image {
     float: right;
     width: 60%;
   }
 
-  /* line 709, ../scss/style.scss */
+  /* line 779, ../scss/style.scss */
   .network {
     margin-top: 30px;
   }
 
-  /* line 712, ../scss/style.scss */
+  /* line 782, ../scss/style.scss */
   .stories_and_resources {
     background: #f1f1f1;
     border-radius: 3px;
   }
 
-  /* line 716, ../scss/style.scss */
+  /* line 786, ../scss/style.scss */
   .success_stories {
     background: #f1f1f1;
     float: left;
     width: 42%;
   }
-  /* line 721, ../scss/style.scss */
+  /* line 791, ../scss/style.scss */
   .success_stories .success_content h2 {
     margin-top: 0;
   }
 
-  /* line 726, ../scss/style.scss */
+  /* line 796, ../scss/style.scss */
   .fatherhood_programs_resources {
     padding: 3%;
     float: right;
     width: 42%;
     border: none;
   }
-  /* line 732, ../scss/style.scss */
+  /* line 802, ../scss/style.scss */
   .fatherhood_programs_resources .resource_links {
     border: none;
     margin-top: 0;
     background: #a8a8ab;
     padding: 3%;
   }
-  /* line 737, ../scss/style.scss */
+  /* line 807, ../scss/style.scss */
   .fatherhood_programs_resources .resource_links h2 {
     text-decoration: underline;
     display: block;
   }
 
-  /* line 743, ../scss/style.scss */
-  .find_a_program {
+  /* line 814, ../scss/style.scss */
+  .fatherhood_programs_resources img {
+    display: block;
+    float: right;
+  }
+  /* line 821, ../scss/style.scss */
+  .fatherhood_programs_resources .find_a_program {
     color: white;
     background-color: #2d2d4d;
   }
-  /* line 746, ../scss/style.scss */
-  .find_a_program h3 {
+  /* line 824, ../scss/style.scss */
+  .fatherhood_programs_resources .find_a_program h3 {
     color: white;
     margin-top: 0;
   }
-
-  /* line 754, ../scss/style.scss */
-  .donation_box_choice li {
-    margin-right: 3%;
+  /* line 831, ../scss/style.scss */
+  .fatherhood_programs_resources .donate_text h2 {
+    margin-top: 0;
   }
-  /* line 756, ../scss/style.scss */
-  .donation_box_choice li:last-child {
+  /* line 836, ../scss/style.scss */
+  .fatherhood_programs_resources .donation_box_choice ul {
+    margin-bottom: 30px;
+  }
+  /* line 838, ../scss/style.scss */
+  .fatherhood_programs_resources .donation_box_choice ul li {
+    display: inline-block;
+    width: 30%;
+  }
+  /* line 845, ../scss/style.scss */
+  .fatherhood_programs_resources .donation_box_choice li .other {
+    color: white;
+    background-color: #bfd255;
+    *zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFBFD255', endColorstr='#FF9ECB2D');
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2JmZDI1NSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjOGViOTJhIi8+PHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiM3MmFhMDAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5ZWNiMmQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bfd255), color-stop(50%, #8eb92a), color-stop(51%, #72aa00), color-stop(100%, #9ecb2d));
+    background-image: -moz-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+    background-image: -webkit-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+    background-image: linear-gradient(to bottom, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+    display: block;
+    text-align: center;
+    padding: 4.3%;
+    margin-bottom: 8px;
+    font-weight: bolder;
+    font-size: 1.2em;
+    float: left;
+    width: 22.6%;
+  }
+  /* line 862, ../scss/style.scss */
+  .fatherhood_programs_resources .donation_box_choice li .other form {
+    font-weight: regular;
+    font-size: .8em;
+  }
+  /* line 865, ../scss/style.scss */
+  .fatherhood_programs_resources .donation_box_choice li .other form input {
+    margin: 0 auto;
+    width: 50%;
+  }
+  /* line 870, ../scss/style.scss */
+  .fatherhood_programs_resources .donation_box_choice li .other form p {
+    font-size: .8em;
+    font-weight: regular;
+    text-align: left;
+  }
+  /* line 879, ../scss/style.scss */
+  .fatherhood_programs_resources .donation_box_choice a {
+    margin-right: 2%;
+    display: inline-block;
+    float: left;
+    width: 15%;
+  }
+}
+@media screen and (min-width: 700px) and (min-width: 1000px) {
+  /* line 895, ../scss/style.scss */
+  .header_search {
+    width: 20%;
+    margin: 0;
+    padding-top: 84px;
+    margin-left: 20%;
+  }
+
+  /* line 901, ../scss/style.scss */
+  .add {
+    float: right;
+    width: 20%;
+    margin-top: 81px;
     margin-right: 0;
   }
-  /* line 760, ../scss/style.scss */
-  .donation_box_choice a {
+
+  /* line 910, ../scss/style.scss */
+  .pullout_quotation {
+    background: white url(../img/open_quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 22px 80px;
+    background-size: 54px 46px;
+    color: black;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: light;
+  }
+
+  /* line 922, ../scss/style.scss */
+  .stay_informed {
+    padding: 5%;
+  }
+  /* line 924, ../scss/style.scss */
+  .stay_informed p {
     display: block;
     float: left;
+    width: 50%;
+    margin-right: 5%;
+    margin-top: 0;
+  }
+  /* line 932, ../scss/style.scss */
+  .stay_informed .email_input {
+    display: block;
+    float: right;
+    width: 45%;
+  }
+
+  /* line 939, ../scss/style.scss */
+  .important_links a {
+    width: 39%;
+    margin-right: 12%;
+  }
+  /* line 942, ../scss/style.scss */
+  .important_links a:last-child {
+    margin-right: 0;
+  }
+
+  /* line 949, ../scss/style.scss */
+  .stories_and_resources {
+    background: none;
+  }
+
+  /* line 952, ../scss/style.scss */
+  .success_stories {
+    float: none;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* line 957, ../scss/style.scss */
+  .success_stories .success_content li {
+    display: inline-block;
+    width: 45%;
+  }
+
+  /* line 963, ../scss/style.scss */
+  .resource_links .resource_tablet {
+    float: none;
+    width: 60%;
+  }
+  /* line 968, ../scss/style.scss */
+  .resource_links .resource_tablet:last-child {
+    margin-right: 0;
+  }
+
+  /* line 975, ../scss/style.scss */
+  .welcome_packet, .special_needs {
+    float: left;
+    width: 50%;
+  }
+
+  /* line 983, ../scss/style.scss */
+  .fatherhood_programs_resources {
+    float: none;
+    display: block;
+    width: 90%;
+  }
+  /* line 987, ../scss/style.scss */
+  .fatherhood_programs_resources img {
+    display: block;
+    float: right;
+  }
+
+  /* line 997, ../scss/style.scss */
+  .resources_img {
+    display: block;
+    float: right;
+    width: 30%;
+  }
+
+  /* line 1006, ../scss/style.scss */
+  .donation_box_choice ul {
+    margin-left: 3%;
+    margin-bottom: 30px;
+  }
+  /* line 1011, ../scss/style.scss */
+  .donation_box_choice li .other {
+    color: white;
+    background-color: #bfd255;
+    *zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFBFD255', endColorstr='#FF9ECB2D');
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2JmZDI1NSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjOGViOTJhIi8+PHN0b3Agb2Zmc2V0PSI1MSUiIHN0b3AtY29sb3I9IiM3MmFhMDAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5ZWNiMmQiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bfd255), color-stop(50%, #8eb92a), color-stop(51%, #72aa00), color-stop(100%, #9ecb2d));
+    background-image: -moz-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+    background-image: -webkit-linear-gradient(top, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+    background-image: linear-gradient(to bottom, #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%);
+    display: block;
+    text-align: center;
+    padding: 1.45%;
+    margin-bottom: 8px;
+    font-weight: bolder;
+    font-size: 1.2em;
+    float: left;
     width: 10%;
-    padding: 0;
+  }
+  /* line 1028, ../scss/style.scss */
+  .donation_box_choice li .other form {
+    font-weight: regular;
+    font-size: .8em;
+  }
+  /* line 1031, ../scss/style.scss */
+  .donation_box_choice li .other form input {
+    margin: 0 auto;
+    width: 80%;
+  }
+  /* line 1036, ../scss/style.scss */
+  .donation_box_choice li .other form p {
+    font-size: .8em;
+    font-weight: regular;
+    text-align: left;
+  }
+  /* line 1044, ../scss/style.scss */
+  .donation_box_choice a {
+    margin-right: 2%;
+    display: block;
+    float: left;
+    width: 7%;
+    padding: 4%;
+  }
+  /* line 1057, ../scss/style.scss */
+  .donation_box_choice .donate_content p:last-child {
+    font-weight: bolder;
+    font-size: 1.2em;
   }
 }

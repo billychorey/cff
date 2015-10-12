@@ -76,6 +76,7 @@ header{
 		color:white;
 		float:right;
 		vertical-align:bottom;
+		text-align: center;
 		// Needs latest Compass, add '@import "compass"' to your scss
 		// Permalink - use to edit and share this gradient:
 		// http://colorzilla.com/gradient-editor/#bfd255+0,8eb92a+50,72aa00+51,9ecb2d+100;Green+Gloss
@@ -106,13 +107,14 @@ header{
 			padding-left:0;
 		}
 		li{
-			background:#2c2b4d;
-			border-bottom:1px solid white;
-			padding:10px;
+
 		}
 		a{
-			padding: 15px 25%;
-    		width: 100%;
+			padding:5%;
+    		display:block;
+    		margin-bottom:5px;
+    		
+    		
 		}
 }
 
@@ -301,10 +303,8 @@ header{
 }
 // End of Fathers and Families Mobile*****************
 // Begin Fatherhood Programs Mobile*******
-.fatherhood_programs{
-	img{
-		display:none;
-	}
+.trophy{
+	display:none;
 }
 
 .topics{
@@ -352,10 +352,16 @@ header{
 			text-decoration:underline;
 		}
 
-
-
-
 }
+
+
+.fatherhood_programs_resources{
+		img{
+			display:none;
+		}
+}
+
+
 .find_a_program{
 	background-color:#e6e7e8;
 	border-radius:3px;
@@ -364,9 +370,7 @@ header{
 	margin-bottom:20px;
 	color:black;
 	text-align:center;
-		h2{
-			
-		}
+		
 		.search_box{
 			// background-color:#2c2b4d;
 			// padding:4%;
@@ -404,12 +408,48 @@ header{
 	}
 }
 // ****** Begin individual styles for fathers and families mobile page
-
+.fatherhood_programs_resources{
+		img{
+			display:none;
+		}
+}
 // ****** Donate styles
 .donation_box_choice{
 	ul{
 		padding-left:0;
 	}
+
+	li{
+		.other{
+		color:white;
+		// Needs latest Compass, add '@import "compass"' to your scss
+		// Permalink - use to edit and share this gradient:
+		// http://colorzilla.com/gradient-editor/#bfd255+0,8eb92a+50,72aa00+51,9ecb2d+100;Green+Gloss
+		background-color: rgb(191,210,85); // Old browsers
+		@include filter-gradient(#bfd255, #9ecb2d, vertical); // IE6-9
+		@include background-image(linear-gradient(top,  rgba(191,210,85,1) 0%,rgba(142,185,42,1) 50%,rgba(114,170,0,1) 51%,rgba(158,203,45,1) 100%));
+		display:block;
+		text-align:center;
+		padding:8%;
+		margin-bottom:8px;
+		font-weight:bolder;
+		font-size:1.2em;
+			input{
+				color:black;
+				margin:0 auto;
+				width:75%;
+			}
+
+		}
+	}
+
+
+
+
+
+
+
+
 	a{
 		color:white;
 		// Needs latest Compass, add '@import "compass"' to your scss
@@ -441,6 +481,12 @@ header{
 	border-radius:3px;
 	border:none;
 	-webkit-appearance: none;
+}
+.donate_content{
+	background:#f1f1f1;
+	padding:4%;
+	border-radius:3px;
+	margin:30px auto;
 }
 
 // Footer ********************* 
@@ -477,11 +523,14 @@ footer{
 }
 
 
+
 @media screen and (min-width:700px){
 	
 // ***** begin generic styling for large sizes head
-
-.mobile_nav_button{
+header{
+	margin-bottom:40px;
+}
+.navigation .mobile_nav_button{
 		display: none;
 	}
 header{
@@ -553,6 +602,7 @@ footer{
 				.social_media li{
 					text-align:right;
 					width:30%;
+					float:right;
 				}
 		}
 
@@ -672,16 +722,36 @@ footer{
 		}
 
 }
+.fatherhood_programs_resources {
+    padding: 3%;
+    // float: right;
+    // width: 60%;
+    border: none;
+}
 .resource_links{
 	.resource_tablet{
-		float:left;
-		width:28%;
+		padding:4%;
+		// float:left;
+		// width:28%;
 		margin-right:8%;
 			&:last-child{
 				margin-right:0;
 			}
 	}
 
+
+}
+.fatherhood_programs_resources{
+		img{
+			display:none;
+		}
+}
+.frequently_used_links{
+	
+	margin-top:35px;
+		.links{
+			display:block;
+		}
 }
 // ***** begin fatherhood programs tablet
 .fatherhood_programs{
@@ -740,6 +810,14 @@ footer{
 				}
 		}
 }
+.fatherhood_programs_resources{
+		img{
+			display:block;
+			float:right;
+		
+}
+
+
 .find_a_program{
 	color:white;
 	background-color:#2d2d4d;
@@ -749,30 +827,245 @@ footer{
 		}
 }
 // ******** begin styles for donate page tablet
-
+.donate_text{
+	h2{
+		margin-top:0;
+	}
+}
 .donation_box_choice{
+	ul{
+		margin-bottom:30px;
+			li{
+				display:inline-block;
+				width:30%;
+			}
+	}
+
 	li{
-		margin-right:3%;
+		.other{
+		
+		color:white;
+		// Needs latest Compass, add '@import "compass"' to your scss
+		// Permalink - use to edit and share this gradient:
+		// http://colorzilla.com/gradient-editor/#bfd255+0,8eb92a+50,72aa00+51,9ecb2d+100;Green+Gloss
+		background-color: rgb(191,210,85); // Old browsers
+		@include filter-gradient(#bfd255, #9ecb2d, vertical); // IE6-9
+		@include background-image(linear-gradient(top,  rgba(191,210,85,1) 0%,rgba(142,185,42,1) 50%,rgba(114,170,0,1) 51%,rgba(158,203,45,1) 100%));
+		display:block;
+		text-align:center;
+		padding: 4.3%;
+		margin-bottom:8px;
+		font-weight:bolder;
+		font-size:1.2em;
+		float:left;
+		width:22.6%;
+			form{
+				font-weight:regular;
+				font-size:.8em;
+				input{
+					margin:0 auto;
+					width:50%;
+				}
+			
+				p{
+					font-size:.8em;
+					font-weight:regular;
+					text-align:left;
+				}
+			}
+		}	
+	}
+
+	a{
+		margin-right:2%;
+		display:inline-block;
+		float:left;
+		width:15%;
+
+		
+	}
+}
+
+
+}
+
+
+@media screen and (min-width:1000px){
+// generic styles at desktop
+.header_search {
+    width: 20%;
+    margin: 0;
+    padding-top: 84px;
+    margin-left: 20%;
+}
+.add {
+    float: right;
+    width: 20%;
+    margin-top: 81px;
+    margin-right: 0;
+}
+
+// ***** begin with index at desktop
+
+.pullout_quotation{
+	background:white url(../img/open_quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 22px 80px;
+    background-size: 54px 46px;;
+	color:black;
+	font-size:1.5em;
+	font-style:italic;
+	font-weight:light;
+}
+
+
+.stay_informed{
+	padding:5%;
+		p{
+			display:block;
+			float:left;
+			width:50%;
+			margin-right:5%;
+			margin-top:0;
+
+		}
+		.email_input{
+			display:block;
+			float:right;
+			width:45%;
+		}
+}
+.important_links{
+		a{
+			width:39%;
+			margin-right:12%;
+				&:last-child{
+					margin-right:0;
+				}
+		}
+}
+
+// **** begin fatherhood programs at desktop
+.stories_and_resources{
+	background:none;
+}
+.success_stories{
+	float:none;
+	display:block;
+	width:90%;
+	margin:0 auto;
+		.success_content li{
+			display:inline-block;
+			width:45%;
+		}
+}
+.resource_links{
+	.resource_tablet{
+		float:none;
+		width:60%;
+		// display:block;
+	
 			&:last-child{
 				margin-right:0;
 			}
 	}
-	a{
-		display:block;
-		float:left;
-		width:10%;
-		padding:0;
-	}
-}
+
 }
 
-@media screen and (min-width:100px){
+.welcome_packet, .special_needs{
+	float:left;
+	width:50%;
+}
+
+
+
+
+.fatherhood_programs_resources{
+	float:none;
+	display:block;
+	width:90%;
+		img{
+			display:block;
+			float:right;
+			
+		}
+}
+
+	
+// ******** fathers and families
+
+	.resources_img{
+		display:block;
+		float:right;
+		width:30%;
+	}
+
+// *********** donate page adjustments
+
+.donation_box_choice{
+	ul{
+		margin-left:3%;
+		margin-bottom:30px;
+	}
+	li{
+		.other{
+		
+		color:white;
+		// Needs latest Compass, add '@import "compass"' to your scss
+		// Permalink - use to edit and share this gradient:
+		// http://colorzilla.com/gradient-editor/#bfd255+0,8eb92a+50,72aa00+51,9ecb2d+100;Green+Gloss
+		background-color: rgb(191,210,85); // Old browsers
+		@include filter-gradient(#bfd255, #9ecb2d, vertical); // IE6-9
+		@include background-image(linear-gradient(top,  rgba(191,210,85,1) 0%,rgba(142,185,42,1) 50%,rgba(114,170,0,1) 51%,rgba(158,203,45,1) 100%));
+		display:block;
+		text-align:center;
+		padding: 1.45%;
+		margin-bottom:8px;
+		font-weight:bolder;
+		font-size:1.2em;
+		float:left;
+		width:10%;
+			form{
+				font-weight:regular;
+				font-size:.8em;
+				input{
+					margin:0 auto;
+					width:80%;
+				}
+			
+				p{
+					font-size:.8em;
+					font-weight:regular;
+					text-align:left;
+				}
+			}
+		}	
+	}
+	a{
+		margin-right:2%;
+
+			
+		
+		display:block;
+		float:left;
+		width:7%;
+		padding:4%;
+
+		
+	}
+	.donate_content{
+			p:last-child{
+				font-weight:bolder;
+				font-size:1.2em;	
+			}
+	}
+
 	
 
 
 
 
 
-
-
+}
+}
 }

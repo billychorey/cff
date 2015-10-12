@@ -23,6 +23,22 @@
         	}
         } );
 
+    // beginning of trial jquery for donate
+
+	    var input = $( ".other").find("form");
+
+		input.hide();
+		$(".other_button").on("click",function(e){
+
+			input.slideToggle(300);
+			e.preventDefault();
+
+		});
+
+
+      
+	// end of test jquery
+
     } ); //close of ready function
 
 } )( window, undefined ); ///close closure
