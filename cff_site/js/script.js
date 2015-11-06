@@ -25,7 +25,7 @@
 
     // beginning of trial jquery for donate
 
-	    var input = $( ".other").find("form");
+	    var input = $( ".other").find("div");
 
 		input.hide();
 		$(".other_button").on("click",function(e){
