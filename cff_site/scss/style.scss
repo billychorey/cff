@@ -15,11 +15,20 @@
     }
 }
 
+// new colors
+$darkblue:#55626f;
+$lightblue:#4ecdc4;
+$green:#c7f464;
+$lightred:#ff6b6b;
+$darkred:#ff6b6b;
+
 /***** SITE STYLES *************/
 /**********************************/
 body{
   font-family:Lora, serif;
+
 }
+
 ul{
 	list-style:none
 }
@@ -37,6 +46,9 @@ img{
 	max-width:100%;
 	display:block;
 	margin:0 auto;
+	
+	border-radius:3px;
+	box-shadow: 2px 2px 5px #5e5c5c;
 }
 /****** begin mobile sizes  generic ******/
 
@@ -49,7 +61,11 @@ header{
 	.logo{
 		display:block;
 		width:50%;
-		margin:15px auto;
+		margin:20px auto;
+			img{
+				border-radius:none;
+				box-shadow:none;
+			}
 		
 	}
 	.header_search{
@@ -102,15 +118,19 @@ header{
 .navigation{
 	// Needs latest Compass, add '@import "compass"' to your scss
 	// Permalink - use to edit and share this gradient:
-	// http://colorzilla.com/gradient-editor/#38566b+5,2c2b4d+100
-	background-color: rgb(56,86,107); // Old browsers
-	@include filter-gradient(#38566b, #2c2b4d, vertical); // IE6-9
-	@include background-image(linear-gradient(top,  rgba(56,86,107,1) 5%,rgba(44,43,77,1) 100%));
-
+	// // http://colorzilla.com/gradient-editor/#38566b+5,2c2b4d+100
+	// background-color: rgb(56,86,107); // Old browsers
+	// @include filter-gradient(#38566b, $darkblue, vertical); // IE6-9
+	// @include background-image(linear-gradient(top,  rgba(56,86,107,1) 5%,rgba(44,43,77,1) 100%));
+	
 	margin-top:20px;
 	text-align:center;
 	padding:10px;
 	border-radius:3px;
+		.mobile_nav_button{
+			
+			font-size:1.5em;
+		}
 		ul{
 			padding-left:0;
 		}
@@ -118,9 +138,11 @@ header{
 
 		}
 		a{
-			padding:5%;
+			padding:3%;
     		display:block;
     		margin-bottom:5px;
+    		text-decoration:underline;
+    		color:$darkblue;
     		
     		
 		}
@@ -129,35 +151,55 @@ header{
 // Begin home page specific mobile *********************
 
 .first_paragraph{
+	padding:4%;
 	color:white;
 	border-radius:3px;
-	background: #2c2b4d;
+	background: $darkblue;
 	padding:4%;
 	margin-top:20px;
 	line-height:1.8em;
+	margin-bottom:20px;
+		h2{
+			text-align:left;
+			color:lightgrey;
+			font-style:italic;
+			line-height:1.5em;
+		}
 		.about_us_image{
-			display:none;
+			// display:none;
 		}
 }
 
 
-.pullout_quotation{
-	margin-top:20px;
-	margin-bottom:20px;
-	color:white;
-	padding: 8%;
-    background: #acadaf url(../img/open_quotation.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 29px;
-    background-size: 54px 46px;
-    border-radius:3px;
+// .pullout_quotation{
+// 	margin-top:20px;
+// 	margin-bottom:20px;
+// 	color:white;
+// 	padding: 8%;
+//     background: #acadaf url(../img/open_quotation.svg);
+//     background-repeat: no-repeat;
+//     background-position: 0px 29px;
+//     background-size: 54px 46px;
+//     border-radius:3px;
 
+// }
+
+.pullout_quotation{
+	color:white;
 }
+
 .important_links{
-	background:#2c2b4d;
-	padding:5%;
+	background:$darkblue;
+	padding:4%;
 	margin-bottom:20px;
 	border-radius:3px;
+	color:white;
+
+	.links{
+		display:block;
+		width:100%;
+
+
 
 		a{
 			display:block;
@@ -168,12 +210,14 @@ header{
 			// http://colorzilla.com/gradient-editor/#8fc400+0,398900+100
 			// Needs latest Compass, add '@import "compass"' to your scss
 			// Permalink - use to edit and share this gradient:
-			// http://colorzilla.com/gradient-editor/#79afae+4,588680+100
-			background-color: rgb(121,175,174); // Old browsers
-			@include filter-gradient(#79afae, #588680, vertical); // IE6-9
-			@include background-image(linear-gradient(top,  rgba(121,175,174,1) 4%,rgba(88,134,128,1) 100%));
+			// // http://colorzilla.com/gradient-editor/#79afae+4,588680+100
+			// background-color: rgb(121,175,174); // Old browsers
+			// @include filter-gradient(#79afae, #588680, vertical); // IE6-9
+			// @include background-image(linear-gradient(top,  rgba(121,175,174,1) 4%,rgba(88,134,128,1) 100%));
+			background:$lightblue;
 				&:hover{
-					color:#2c2b4d;
+					background:#41b0a8;
+					color:$darkblue;
 				}
 
 
@@ -182,6 +226,7 @@ header{
 			a:first-child{
 				margin-bottom:15px;
 			}
+	}
 
 }
 
@@ -220,7 +265,7 @@ header{
 }
 
 .stay_informed{
-	background-color: #2c2b4d;
+	background-color: $darkblue;
 	color:white;
 	padding: 2% 4% 8% 4%;
 	border-radius:3px;
@@ -265,6 +310,7 @@ header{
 
 .headlines{
 	margin-bottom:40px;
+	
 		ul{
 			padding-left:0;
 		}
@@ -274,18 +320,21 @@ header{
 			font-weight:bolder;
 		}
 		h5{
-			font-weight:bolder;
-			font-size:1em;
+			font-weight:light;
+			font-style:italic;
+			font-size:.75em;
 		}
-		p{
-			margin-left:3%;
-			font-weight:bolder;
-		}
-
+		
 		a{
-			color: #00aeef;
+			color:$lightblue;
+			
+			font-weight:bolder;
+			
 			margin-left:3%;
 			text-decoration:underline;
+				&:hover{
+					color:#41b0a8;
+				}
 		}
 }
 // End of home page mobile*****************
@@ -363,7 +412,7 @@ header{
 			margin-top:0;
 		}
 		a{
-			color:#2c2b4d;
+			color:$darkblue;
 			text-decoration:underline;
 		}
 
@@ -387,7 +436,7 @@ header{
 	text-align:center;
 		
 		.search_box{
-			// background-color:#2c2b4d;
+			// background-color:$darkblue;
 			// padding:4%;
 			color:black;
 		}
@@ -542,16 +591,27 @@ header{
 // Footer ********************* 
 
 footer{
-	background-color: #2c2b4d;
+	background-color: $darkblue;
 	padding:6%;
-	padding-bottom:20%;
+	padding-bottom:10px;
 	color:white;
 	line-height:1.8em;
+	font-size:.8em;
 		ul{
 			padding-left:0;
+			text-align:left;
 		}
 		.left{
 			font-size:.8em;
+			
+			p{
+				font-weight:bolder;
+				font-size:1.5em;
+				margin-bottom:5px;
+			}
+			a{
+				text-decoration:underline;
+			}
 			
 		}
 		.address{
@@ -568,7 +628,15 @@ footer{
 			font-size:1.2em;
 			line-height:2em;
 			text-decoration:underline;
+			li{
+				text-align:left;
+			}
 
+
+		}
+		img{
+			max-width:35px;
+			box-shadow:none;
 		}
 }
 
@@ -589,22 +657,20 @@ footer{
 
 		.logo{
 			float:left;
-			width:30%;
-			max-height:30px;
+			width:33%;
+			// max-height:30px;
 			padding-top:5px;
 		}
 		.header_search{
 			float:right;
 			
-			margin:0;
-			padding-top: 84px;
-			// margin-left: 10%;
+			margin:40px auto 20px auto;
 		}
 		.add{
 			float:right;
 			width:20%;
-			margin-top:59px;
-			margin-right:0;
+			
+			
 		}
 
 	}
@@ -612,10 +678,14 @@ footer{
 	.navigation{
 
 		background:none;
+		margin-top:0;
+		padding:0;
+		border:1px solid $darkblue;
+
 		li{
 			background:none;
 			display:inline-block;
-			border-right:1px solid black;
+			border-right:1px solid $darkblue;
 			border-bottom:none;
 			width: 16%;
 			&:last-child{
@@ -625,14 +695,29 @@ footer{
 			
 		a{
 			background-color:white;
-			color:black;
+			color:$darkblue;
 			padding:2%;
+			margin-bottom:0;
+			text-decoration:none;
+
+			
 			
 			&:hover{
-				color: green;
+				color: $lightblue;
 			}
 		}
+		.add{
+			background-color:$green;
+			border-radius:3px;
+			border:1px solid #97b751;
+				&:hover{
+					background-color:#97b751;
+				}
+		}
 	}
+	
+	
+
 	footer{
 		display:block;
 		.left{
@@ -646,14 +731,18 @@ footer{
 			width:35%;
 		}
 		.right{
-			float:right;
-			width:20%;
-			text-align:right;
+			
+			
 			ul{
 				margin-top:5px;
+				float:left;
+				width:20%;
+			}
+			li{
+				text-align:right;
 			}
 			.social_media li{
-				text-align:right;
+				
 				width:30%;
 				float:right;
 			}
@@ -662,7 +751,26 @@ footer{
 
 
 	// ************ begin tablet size home specific
-	.about_us_text{
+	.about_us{
+		margin-bottom:30px;
+		
+	}
+	.pullout_quotation{
+		    float: left;
+    		width: 50%;
+    		font-size:1.1em;
+	}
+	.about_us_text{	
+		h2{
+			font-size:2em;
+			line-spacing:1em;
+			margin-bottom:10px;
+			margin-bottom:40px;
+		}
+		h3{
+			margin-top:0;
+		}
+		
 		.about_us_image{
 			display:block;
 			float:right;
@@ -671,24 +779,33 @@ footer{
 			
 		}
 	}
-	.pullout_quotation{
-		background:white url(../img/open_quotation.svg);
-	    background-repeat: no-repeat;
-	    background-position: 0px 29px;
-	    background-size: 54px 46px;;
-		color:black;
-		font-size:1.5em;
-		font-style:italic;
-		font-weight:light;
-	}
+	
 
 	.important_links{
 		display:block;
-		a{
-			display:inline-block;
-			width:43%;
-			margin:10px auto;
+		
+		.links{
+			float:right;
+			width:48%;
+			margin-top:0;
+				a{
+			
+				margin:0px auto 20px auto;
+			}
+
 		}
+		.definitions{
+			float:left;
+			width:48%;
+				p{
+					color:white;
+					line-height:1.5em;
+					&:first-child{
+						margin-top:0;
+					}
+				}
+		}
+		
 	}
 	.secondary_links{
 		background:#f1f1f1;
@@ -724,7 +841,8 @@ footer{
 	}
 
 	.stay_informed{
-		margin-bottom:20px;
+		float:left;
+		width:40%;
 	}
 
 	.resources_index{
@@ -760,9 +878,18 @@ footer{
 	.headlines{
 		width:48%;
 		float:right;
+			h3{
+				margin-top:0;
+			}
 	}
 
 	// ******** begin fathers and families specific styles
+	.fathersandfamilies{
+		h2{
+			text-align:left;
+		}
+	}
+
 	.main_content{
 		background:#f1f1f1;
 		padding:3%;
@@ -788,7 +915,7 @@ footer{
 	.resource_links{
 		
 		.resource_tablet{
-			padding:4%;
+			padding:0;
 			margin-right:8%;
 			
 			&:last-child{
@@ -803,10 +930,15 @@ footer{
 		
 		.links{
 			display:block;
+			width:48%;
 		}
+	}
+	.resource_tablet{
+
 	}
 	// ***** begin fatherhood programs tablet
 	.fatherhood_programs{
+		
 		img{
 			display:block;
 			float:right;
@@ -846,6 +978,7 @@ footer{
 		background:#f1f1f1;
 		float:left;
 		width:42%;
+		margin:0;
 
 		.success_content{
 		
@@ -857,7 +990,7 @@ footer{
 
 	.fatherhood_programs_resources{
 		
-		padding:3%;
+	
 		float:right;
 		width:42%;
 		border:none;
@@ -878,12 +1011,13 @@ footer{
 		img{
 			display:block;
 			float:right;
+			margin-bottom:20px;
 		}	
 	}
 
 	.find_a_program{
 		color:white;
-		background-color:#2d2d4d;
+		background-color:$lightblue;
 		h3{
 			color:white;
 			margin-top:0;
@@ -916,57 +1050,53 @@ footer{
 @media screen and (min-width:1000px){
 	// generic styles at desktop
 	.header_search {
-	    width: 20%;
-	    margin: 0;
-	    padding-top: 84px;
-	    margin-left: 20%;
+	    padding-top:7px;
 	}
 	.add {
-	    float: right;
-	    width: 20%;
-	    margin-top: 81px;
+	    
+	    // margin-top: 81px;
 	    margin-right: 0;
 	}
 
 	// ***** begin with index at desktop
 
 	.pullout_quotation{
-		background:white url(../img/open_quotation.svg);
-	    background-repeat: no-repeat;
-	    background-position: 15px 78px;
-	    background-size: 54px 46px;;
-		color:black;
-		font-size:1.2em;
-		font-style:italic;
-		font-weight:light;
+		// background:white url(../img/open_quotation.svg);
+	 //    background-repeat: no-repeat;
+	 //    background-position: 15px 78px;
+	 //    background-size: 54px 46px;;
+		// color:black;
+		// font-size:1.2em;
+		// font-style:italic;
+		// font-weight:light;
 	}
 
 
-	.stay_informed{
-		padding:5%;
-		p{
-			display:block;
-			float:left;
-			width:50%;
-			margin-right:5%;
-			margin-top:0;
+	// .stay_informed{
+	// 	padding:4%;
+	// 	p{
+	// 		display:block;
+	// 		float:left;
+	// 		width:50%;
+	// 		margin-right:4%;
+	// 		margin-top:0;
 
-		}
-		.email_input{
-			display:block;
-			float:right;
-			width:45%;
-		}
-	}
-	.important_links{
-		a{
-			width:39%;
-			margin-right:12%;
-			&:last-child{
-				margin-right:0;
-			}
-		}
-	}
+	// 	}
+	// 	.email_input{
+	// 		display:block;
+	// 		float:right;
+	// 		width:45%;
+	// 	}
+	// }
+	// .important_links{
+	// 	a{
+	// 		width:39%;
+	// 		margin-right:12%;
+	// 		&:last-child{
+	// 			margin-right:0;
+	// 		}
+	// 	}
+	// }
 
 	// **** begin fatherhood programs at desktop
 	.stories_and_resources{
@@ -975,8 +1105,9 @@ footer{
 	.success_stories{
 		float:none;
 		display:block;
-		width:90%;
 		margin:0 auto;
+		width:92%;
+		
 		.success_content li{
 			display:inline-block;
 			width:45%;
@@ -1002,7 +1133,9 @@ footer{
 	.fatherhood_programs_resources{
 		float:none;
 		display:block;
-		width:90%;
+		padding:0;
+		width:100%;
+		margin-top:3%;
 		img{
 			display:block;
 			float:right;
